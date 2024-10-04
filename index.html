@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pre entrega 3 - Curso de JavaScript - Comisión 59975</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <h1>Simulador de Transporte de Carga</h1>
+
+    <form id="formSimuladorTransporte">
+      <div class="fld">
+        <label for="origen">Origen</label>
+        <input
+          type="text"
+          id="origen"
+          name="origen"
+          placeholder="Ingresar origen"
+          required
+        />
+      </div>
+
+      <div class="fld">
+        <label for="destino">Destino</label>
+        <input
+          type="text"
+          id="destino"
+          name="destino"
+          placeholder="Ingresar destino"
+          required
+        />
+      </div>
+
+      <div class="fld">
+        <label for="distancia">Distancia (Km)</label>
+        <input
+          type="number"
+          id="distancia"
+          name="distancia"
+          placeholder="Ingresar kilometros"
+          required
+        />
+      </div>
+
+      <div class="fld">
+        <label for="kilogramos">Peso de la carga (Kg)</label>
+        <input
+          type="number"
+          id="kilogramos"
+          name="kilogramos"
+          placeholder="Ingresar kilogramos"
+          required
+        />
+      </div>
+
+      <div class="fld">
+        <label for="empresa">Empresa</label>
+        <input
+          type="text"
+          id="empresa"
+          name="empresa"
+          placeholder="Ingresar empresa o nombre"
+          required
+        />
+      </div>
+
+      <div class="fld cliente-frecuente">
+        <label for="clienteFrecuente">Cliente frecuente</label>
+        <input type="checkbox" id="clienteFrecuente" name="clienteFrecuente" />
+      </div>
+
+      <button onclick="mostrarResultado()">Simular</button>
+    </form>
+
+    <button id="btnVerHistorial">Ver historial</button>
+
+    <div id="resultado"></div>
+
+    <div id="modalHistorial" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Historial de Simulaciones</h2>
+        <div id="historialSimulaciones"></div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
